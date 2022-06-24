@@ -9,15 +9,15 @@ tentaclio-snowflake = {editable = true,path = "."}
 pytest = "*"
 pytest-cov = "*"
 pytest-mock = "*"
-
 black = "*"
 flake8 = "*"
 isort = "*"
 mypy = "*"
-
 twine = "*"
 
 [packages]
+tentaclio = ">=1.0.0"
+snowflake-sqlalchemy = "*"
 
 [requires]
 python_version = "3.9"
