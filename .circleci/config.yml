@@ -67,7 +67,7 @@ jobs:
           name: Run Python linter
           command: make lint
 
-  unit:
+  test:
     executor: standard
     steps:
       - checkout_source
@@ -75,15 +75,6 @@ jobs:
       - run:
           name: Run Python unit tests
           command: make unit
-
-  functional:
-    executor: standard
-    steps:
-      - checkout_source
-      - update_virtualenv
-      - run:
-          name: Run snowflake functional tests
-          command: make functional
 
   release:
     executor: standard
