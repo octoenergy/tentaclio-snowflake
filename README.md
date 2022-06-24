@@ -19,3 +19,11 @@ format                        Run black and isort
 test                          Run unit tests
 circleci                      Validate circleci configuration (needs circleci cli)
 ```
+
+## Configuring access to Snowflake
+
+Your connection url should be in the following format:
+
+```
+snowflake://<username>:<password>@<host>
+```

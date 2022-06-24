@@ -1,8 +1,8 @@
 """This package implements the tentaclio snowflake client """
 from tentaclio import *  # noqa
 
-from .clients.snowflake_client import ClientClassName
+from .clients.snowflake_client import SnowflakeClient
 
 
 # Add DB registry
-DB_REGISTRY.register("snowflake", ClientClassName)  # type: ignore
+DB_REGISTRY.register("snowflake", SnowflakeClient)  # type: ignore

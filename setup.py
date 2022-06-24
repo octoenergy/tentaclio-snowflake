@@ -34,7 +34,8 @@ class VerifyVersionCommand(install):
 
 
 install_requires = [
-    "tentaclio",
+    "tentaclio>=1.0.0",
+    "snowflake-sqlalchemy"
 ]
 
 
